@@ -1,3 +1,4 @@
+cd /mnt/lfs/sources
 tar -xf binutils-2.42.tar.xz
 mkdir -v binutils-2.42/build
 cd binutils-2.42/build
