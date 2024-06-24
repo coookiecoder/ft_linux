@@ -1,4 +1,5 @@
 LFS=/mnt/lfs
+LFS_TGT=$(uname -m)-lfs-linux-gnu
 
 cd /mnt/lfs/sources
 tar -xf gcc-13.2.0.tar.xz
@@ -23,3 +24,5 @@ esac
 
 mkdir -v build
 cd build
+
+../configure --target=$LFS_TGT --prefix=$LFS/tools --with-glibc-version=2.11 --with-sysroot=$LFS --with-newlib --without-headers --enable-initfini-array --disable-nls --disable-shared --disable-multilib --disable-decimal-float --disable-threads --disable-libatomic --disable-libgomp --disable-libquadmath --disable-libssp --disable-libvtv --disable-libstdcxx --enable-languages=c,c++
