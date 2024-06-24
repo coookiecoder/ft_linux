@@ -3,6 +3,8 @@ LFS=/mnt/lfs
 cd /mnt/lfs/sources
 tar -xf gcc-13.2.0.tar.xz
 
+cd gcc-13.2.0
+
 tar -xf ../mpfr-4.2.1.tar.xz
 mv -v mpfr-4.2.1 mpfr
 
@@ -19,5 +21,5 @@ case $(uname -m) in
  ;;
 esac
 
-mkdir -v /gcc-13.2.0/build
-cd /gcc-13.2.0/build
+mkdir -v gcc-13.2.0/build
+cd build
