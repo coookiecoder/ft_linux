@@ -21,5 +21,5 @@ case $(uname -m) in
  ;;
 esac
 
-mkdir -v gcc-13.2.0/build
+mkdir -v build
 cd build
