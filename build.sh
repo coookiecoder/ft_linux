@@ -1,4 +1,4 @@
-$LFS = /mnt/lfs
+LFS=/mnt/lfs
 
 #bin utils
 
