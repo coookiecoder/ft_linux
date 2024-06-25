@@ -31,3 +31,6 @@ PATH=$LFS/tools/bin:$PATH
 CONFIG_SITE=$LFS/usr/share/config.site
 export LFS LC_ALL LFS_TGT PATH CONFIG_SITE
 EOF
+
+cp -r ../ft_linux /home/lfs/
+chown -R lfs /home/lfs/ft_linux
