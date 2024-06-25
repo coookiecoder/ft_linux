@@ -7,3 +7,7 @@ LFS=/mnt/lfs
 #gcc
 
 ./script/gcc.sh
+
+#API header
+
+./script/API_header.sh
