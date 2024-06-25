@@ -30,3 +30,7 @@ $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
 #libc++
 
 ./script/libc++.sh
+
+#m4
+
+./script/m4.sh
