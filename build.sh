@@ -15,3 +15,4 @@ LFS=/mnt/lfs
 #libc
 
 ./script/libc.sh
+./test_libc.sh
