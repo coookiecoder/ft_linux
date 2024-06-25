@@ -13,4 +13,4 @@ make
 make DESTDIR=$LFS install
 
 cd ..
-rn -rf m4-1.4.19
+rm -rf m4-1.4.19
