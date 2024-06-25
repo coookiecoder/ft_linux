@@ -1,4 +1,5 @@
 LFS=/mnt/lfs
+LFS_TGT=$(uname -m)-lfs-linux-gnu
 
 cd /mnt/lfs/sources
 tar -xf glibc-2.39.tar.xz
@@ -18,3 +19,6 @@ mkdir -v build
 cd       build
 
 ../configure --prefix=/usr --host=$LFS_TGT --build=$(../scripts/config.guess) --enable-kernel=3.2 --with-headers=$LFS/usr/include libc_cv_slibdir=/lib
+
+make
+make DESTDIR=$LFS install
