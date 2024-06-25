@@ -32,5 +32,7 @@ echo "rootsbindir=/usr/sbin" > configparms
 make
 make DESTDIR=$LFS install
 
+sed '/RTLDLIST=/s@/usr@@g' -i $LFS/usr/bin/ldd
+
 cd ../..
 rm -rf glibc-2.39
