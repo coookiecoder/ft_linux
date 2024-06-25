@@ -25,4 +25,4 @@ sleep 10;
 
 #make header
 
-$LFS/tools/libexec/gcc/$LFS_TGT/10.2.0/install-tools/mkheaders
+$LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
