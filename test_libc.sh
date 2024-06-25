@@ -1,8 +1,9 @@
-LFS=/mnt/lfs
 LFS_TGT=$(uname -m)-lfs-linux-gnu
 
-echo 'int main(){}' > $LFS/dummy.c
-$LFS_TGT-gcc $LFS/dummy.c -o $LFS/a.out
-readelf -l $LFS/a.out | grep '/ld-linux'
+cd /mnt/lfs/sources/glibc-2.39/build
 
-rm -v $LFS/dummy.c $LFS/a.out
+echo 'int main(){}' > dummy.c
+$LFS_TGT-gcc dummy.c -o a.out
+readelf -l a.out | grep '/ld-linux'
+
+rm -v dummy.c a.out
