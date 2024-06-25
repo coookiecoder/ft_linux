@@ -11,3 +11,7 @@ LFS=/mnt/lfs
 #API header
 
 ./script/API_header.sh
+
+#libc
+
+./script/libc.sh
