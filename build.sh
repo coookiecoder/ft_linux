@@ -42,3 +42,7 @@ $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
 #bash
 
 ./script/bash.sh
+
+#coreutils
+
+./script/coreutils.sh
