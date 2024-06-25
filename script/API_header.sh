@@ -10,3 +10,6 @@ make headers
 find usr/include -name '.*' -delete
 rm usr/include/Makefile
 cp -rv usr/include $LFS/usr
+
+cd ../..
+rm -rf linux-6.7.4
