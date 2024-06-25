@@ -1,4 +1,5 @@
 LFS=/mnt/lfs
+LFS_TGT=$(uname -m)-lfs-linux-gnu
 
 cd /mnt/lfs/sources
 tar -xf binutils-2.42.tar.xz
@@ -15,3 +16,6 @@ cd binutils-2.42/build
 
 make
 make install
+
+cd ../..
+rm -rf binutils-2.42

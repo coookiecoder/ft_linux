@@ -50,5 +50,7 @@ make
 make install
 
 cd ..
-mkdir $LFS/usr/include/
-cat gcc/limitx.h gcc/glimits.h gcc/limity.h > $LFS/usr/include/limits.h
+cat gcc/limitx.h gcc/glimits.h gcc/limity.h > `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/include/limits.h
+
+cd ..
+rm -rf gcc-13.2.0

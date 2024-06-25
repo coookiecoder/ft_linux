@@ -31,3 +31,6 @@ echo "rootsbindir=/usr/sbin" > configparms
 
 make
 make DESTDIR=$LFS install
+
+cd ../..
+rm -rf glibc-2.39
