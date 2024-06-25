@@ -31,4 +31,5 @@ make
 make install
 
 cd ..
-cat gcc/limitx.h gcc/glimits.h gcc/limity.h > "$LFS_TGT-gcc"/install-tools/include/limits.h
+mkdir $LFS/usr/include/
+cat gcc/limitx.h gcc/glimits.h gcc/limity.h > $LFS/usr/include/limits.h
