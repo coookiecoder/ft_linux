@@ -15,4 +15,15 @@ LFS=/mnt/lfs
 #libc
 
 ./script/libc.sh
+
+#test step
+
 ./test_libc.sh
+echo "WATCH OUT FOR ANY ERROR HERE, will resume in 10 seconds";
+sleep 10;
+
+#make header
+
+$LFS/tools/libexec/gcc/$LFS_TGT/10.2.0/install-tools/mkheaders
+
+
