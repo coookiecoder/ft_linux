@@ -1,4 +1,5 @@
 LFS=/mnt/lfs
+LFS_TGT=$(uname -m)-lfs-linux-gnu
 
 #bin utils
 
@@ -25,5 +26,3 @@ sleep 10;
 #make header
 
 $LFS/tools/libexec/gcc/$LFS_TGT/10.2.0/install-tools/mkheaders
-
-
