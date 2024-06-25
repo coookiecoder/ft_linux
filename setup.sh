@@ -13,6 +13,8 @@ case $(uname -m) in
   x86_64) mkdir -pv $LFS/lib64 ;;
 esac
 
+mkdir -p /home/lfs
+
 cat > home/lfs/.bash_profile << "EOF"
 exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
 EOF
