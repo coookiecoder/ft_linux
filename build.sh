@@ -26,3 +26,7 @@ sleep 10;
 #make header
 
 $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
+
+#libc++
+
+./script/libc++.sh
