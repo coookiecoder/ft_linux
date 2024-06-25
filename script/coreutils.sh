@@ -2,7 +2,7 @@ LFS=/mnt/lfs
 LFS_TGT=$(uname -m)-lfs-linux-gnu
 
 cd /mnt/lfs/sources
-tar coreutils-9.4.tar.xz
+tar -xf coreutils-9.4.tar.xz
 cd coreutils-9.4
 
 ./configure --prefix=/usr                     \
