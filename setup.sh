@@ -15,11 +15,11 @@ esac
 
 mkdir -p /home/lfs
 
-cat > home/lfs/.bash_profile << "EOF"
+cat > /home/lfs/.bash_profile << "EOF"
 exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
 EOF
 
-cat > home/lfs/.bashrc << "EOF"
+cat > /home/lfs/.bashrc << "EOF"
 set +h
 umask 022
 LFS=/mnt/lfs
