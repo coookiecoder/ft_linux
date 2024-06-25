@@ -38,3 +38,7 @@ $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
 #ncurses
 
 ./script/ncurses.sh
+
+#bash
+
+./script/bash.sh
