@@ -2,6 +2,7 @@ LFS=/mnt/lfs
 LFS_TGT=$(uname -m)-lfs-linux-gnu
 
 cd /mnt/lfs/sources
+rm -rf gcc-13.2.0
 tar -xf gcc-13.2.0.tar.xz
 cd gcc-13.2.0
 
