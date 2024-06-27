@@ -32,4 +32,6 @@ $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
 #findutils
 ./script/findutils.sh
 #gawk
-./script/gawk
+./script/gawk.sh
+#grep
+./script/grep.sh
