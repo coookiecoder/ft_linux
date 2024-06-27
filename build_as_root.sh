@@ -2,14 +2,24 @@ LFS=/mnt/lfs
 LFS_TGT=$(uname -m)-lfs-linux-gnu
 
 #change ownership
-chown -R root:root $LFS/{usr,lib,var,etc,bin,sbin,tools}
+chown -R root:root $LFS/usr
+chown -R root:root $LFS/lib
+chown -R root:root $LFS/var
+chown -R root:root $LFS/etc
+chown -R root:root $LFS/bin
+chown -R root:root $LFS/sbin
+chown -R root:root $LFS/tools
+
 case $(uname -m) in
   x86_64) chown -R root:root $LFS/lib64 ;;
 esac
 
 #Preparing Virtual Kernel File Systems
 
-mkdir -pv $LFS/{dev,proc,sys,run}
+mkdir -pv $LFS/dev
+mkdir -pv $LFS/proc
+mkdir -pv $LFS/sys
+mkdir -pv $LFS/run
 
 mount -v --bind /dev $LFS/dev
 
