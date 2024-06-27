@@ -1,7 +1,7 @@
 LFS=/mnt/lfs
 LFS_TGT=$(uname -m)-lfs-linux-gnu
 
-cd mnt/lfs/sources
+cd /mnt/lfs/sources
 tar -xf grep-3.11.tar.xz
 cd grep-3.11
 
