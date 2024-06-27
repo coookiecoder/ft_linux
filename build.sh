@@ -41,3 +41,5 @@ $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
 ./script/make.sh
 #patch
 ./script/patch.sh
+#sed
+./script/sed.sh
