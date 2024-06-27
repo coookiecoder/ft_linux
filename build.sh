@@ -39,3 +39,5 @@ $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
 ./script/gzip.sh
 #make
 ./script/make.sh
+#patch
+./script/patch.sh
