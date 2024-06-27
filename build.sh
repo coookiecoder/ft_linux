@@ -50,3 +50,7 @@ $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
 #diffutils
 
 ./script/diffutils.sh
+
+#file
+
+./script/file.sh
