@@ -47,3 +47,5 @@ $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
 ./script/tar.sh
 #xz
 ./script/xz.sh
+#bin utils pass 2
+./script/binutils2.sh
