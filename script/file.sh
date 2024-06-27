@@ -2,7 +2,7 @@ LFS=/mnt/lfs
 LFS_TGT=$(uname -m)-lfs-linux-gnu
 
 cd /mnt/lfs/sources
-tar -xf file-5.45.tar.xgz
+tar -xf file-5.45.tar.gz
 cd file-5.45
 
 mkdir build
