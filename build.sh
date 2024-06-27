@@ -54,3 +54,7 @@ $LFS/tools/libexec/gcc/$LFS_TGT/13.2.0/install-tools/mkheaders
 #file
 
 ./script/file.sh
+
+#findutils
+
+./script/findutils.sh
