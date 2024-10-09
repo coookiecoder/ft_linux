@@ -24,13 +24,13 @@ mkdir -pv $LFS/run
 
 mount -v --bind /dev $LFS/dev
 
-mount -v --bind /dev/pts $LFS/dev/pts
+mount -vt devpts devpts -o gid=5,mode=0620 $LFS/dev/pts
 mount -vt proc proc $LFS/proc
 mount -vt sysfs sysfs $LFS/sys
 mount -vt tmpfs tmpfs $LFS/run
 
 if [ -h $LFS/dev/shm ]; then
-  mkdir -pv $LFS/$(readlink $LFS/dev/shm)
+  install -v -d -m 1777 $LFS$(realpath /dev/shm)
 else
   mount -vt tmpfs -o nosuid,nodev tmpfs $LFS/dev/shm
 fi
@@ -42,4 +42,6 @@ chroot "$LFS" /usr/bin/env -i   \
     TERM="$TERM"                \
     PS1='(lfs chroot) \u:\w\$ ' \
     PATH=/usr/bin:/usr/sbin     \
+    MAKEFLAGS="-j$(8)"      \
+    TESTSUITEFLAGS="-j$(8)" \
     /bin/bash --login
