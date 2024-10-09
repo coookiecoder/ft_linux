@@ -9,7 +9,8 @@ cd coreutils-9.4
             --host=$LFS_TGT                   \
             --build=$(build-aux/config.guess) \
             --enable-install-program=hostname \
-            --enable-no-install-program=kill,uptime
+            --enable-no-install-program=kill,uptime \
+			gl_cv_macro_MB_CUR_MAX_good=y
 
 make
 make DESTDIR=$LFS install
