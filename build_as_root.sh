@@ -1,5 +1,6 @@
 LFS=/mnt/lfs
 LFS_TGT=$(uname -m)-lfs-linux-gnu
+export MAKEFLAGS='-j8'
 
 #change ownership
 chown -R root:root $LFS/usr

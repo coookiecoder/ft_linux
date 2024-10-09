@@ -1,5 +1,6 @@
 LFS=/mnt/lfs
 LFS_TGT=$(uname -m)-lfs-linux-gnu
+export MAKEFLAGS="-j8"
 
 #bin utils
 ./script/binutils.sh
