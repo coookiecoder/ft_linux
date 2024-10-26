@@ -5,6 +5,8 @@ cd /mnt/lfs/sources
 tar -xf glibc-2.39.tar.xz
 cd glibc-2.39
 
+export MAKEFLAGS="-j1"
+
 case $(uname -m) in
     i?86)   ln -sfv ld-linux.so.2 $LFS/lib/ld-lsb.so.3
     ;;
@@ -33,6 +35,8 @@ make
 make DESTDIR=$LFS install
 
 sed '/RTLDLIST=/s@/usr@@g' -i $LFS/usr/bin/ldd
+
+export MAKEFLAGS="-j8"
 
 cd ../..
 rm -rf glibc-2.39
